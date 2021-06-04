@@ -22,4 +22,4 @@ class BaseCache:
         pass
 
     def clear_all(self):
-        pass
+        self.data = {}
