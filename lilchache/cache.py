@@ -19,7 +19,7 @@ class BaseCache:
         self.data[key] = Content(body=content, generate_time=datetime.now())
 
     def clear_data(self, key):
-        pass
+        del self.data[key]
 
     def clear_all(self):
         self.data = {}
